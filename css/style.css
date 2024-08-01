@@ -1,0 +1,160 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #282829;
+    color: #000000;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input, button {
+    border-radius: 5px;
+    height: 25px;
+    border: 1px solid silver;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.limite-atingido td:nth-last-child(2) {
+    background-color: #ffcccc;
+}
+
+.limite-n-atingido td:nth-last-child(2) {
+    background-color: greenyellow;
+}
+
+td:nth-last-child(-n+2) {
+    text-align: right;
+}
+
+@media only screen and (max-width: 600px) {
+    th:nth-child(1), td:nth-child(1),
+    th:nth-child(3), td:nth-child(3),
+    th:nth-child(4), td:nth-child(4),
+    th:nth-child(6), td:nth-child(6),
+    th:nth-child(8), td:nth-child(8) {
+        display: none;
+    }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.product-details {
+    text-align: left;
+}
+
+.detail-item {
+    margin-bottom: 10px;
+}
+
+.detail-item strong {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.detail-item:hover {
+    background-color: #f4f4f4;
+}
+
+.vencida {
+    background-color: #ffcccc;
+}
+
+.hidden {
+    display: none;
+}
+
+.paid {
+    background-color: lightgreen;
+}
+
+.tables-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tables-container > div {
+    margin-bottom: 20px;
+}
+
+.table-title {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+}
